@@ -1,0 +1,16 @@
+{
+  "name": "ch05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "monolithic.js",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node monolithic.js",
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
