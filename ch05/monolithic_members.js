@@ -89,7 +89,7 @@ function unregister (method, pathname, params, cb) {
   } else {
     var connection = mysql.createConnection(conn)
     connection.connect()
-    connection.query("delete from goods where username = '" + params.username + "';"
+    connection.query("delete from members where username = '" + params.username + "';"
       , (error, results, fields) => {
         if (error) {                                                                                            // mysql 에러 처리
           response.errorcode = 1
