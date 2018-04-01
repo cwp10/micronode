@@ -1,3 +1,7 @@
+CREATE DATABASE monolithic;
+
+use monolithic;
+
 CREATE TABLE IF NOT EXISTS `goods` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(128) NOT NULL,
@@ -22,3 +26,11 @@ CREATE TABLE IF NOT EXISTS `purchases` (
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+create user 'micro'@'%' identified by 'service';
+
+grant all privileges on monolithic.* to 'micro'@'%';
+
+flush privileges;
+
+SELECT User, Password FROM mysql.user WHERE User='micro';
