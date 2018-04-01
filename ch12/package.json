@@ -1,0 +1,17 @@
+{
+  "name": "microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run.bat"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^14.2.2",
+    "mysql": "^2.15.0",
+    "redis": "^2.8.0"
+  }
+}
